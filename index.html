@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Weather App</h1>
+      <form class="form" method="post">
+        <button id="getCurrentWeather">Use Current Location</button>
+        <select name="cityList" id="cityList">
+          <option value="new york">New York</option>
+          <option value="chennai">Chennai</option>
+          <option value="delhi">Delhi</option>
+          <option value="london">London</option>
+          <option value="sydney">Sydney</option>
+        </select>
+      </form>
+
+      <div id="info" class="info-container">
+        <p>Temperature:</p>
+        <p id="temperature">-</p>
+
+        <p>City Name:</p>
+        <p id="city">-</p>
+
+        <p>Weather Description:</p>
+        <p id="weather">-</p>
+
+        <!-- <div class="icon-container"><img id="weatherIcon" src="" /></div> -->
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
